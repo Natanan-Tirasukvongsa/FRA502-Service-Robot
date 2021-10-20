@@ -35,6 +35,7 @@ $rostopic list
 
 <!--add input to control robot arm-->
 $rostopic pub /dd/joint1_position_controller/command std_msgs/Float64 "data: 1.57"
+
 $rostopic pub /dd/joint2_position_controller/command std_msgs/Float64 "data: -0.7"
 <!--output-->
 publishing and latching message. Press ctrl-C to terminate
