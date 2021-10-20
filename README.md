@@ -14,17 +14,20 @@ or launch RVIZ & Gazebo together
 $ roslaunch dd_sim dd_gazebo.launch
 ~~~
 
-#####second terminal#####
+open second terminal to show rostopic list
 
-###rostopic list###
-
+~~~
 $ rostopic list
+~~~
 
-###main output###
+output will show 
 
+~~~
 /dd/camera1/image_raw
-
+~~~
+~~~
 /dd/laser/scan
+~~~
 
 ###open camera###
 
