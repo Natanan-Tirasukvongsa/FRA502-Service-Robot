@@ -2,6 +2,7 @@
 This robot is moving base (by differential drive) &amp; pick and plack (scala)
 
 Simulation Phase I
+
 #####first terminal#####
 
 ###launch RVIZ###
@@ -19,7 +20,9 @@ $roslaunch dd_sim dd_Gazebo.launch
 $rostopic list
 
 ###main output###
+
 /dd/camera1/image_raw
+
 /dd/laser/scan
 
 ###open camera###
@@ -27,7 +30,9 @@ $rostopic list
 $rosrun image_view image_view image:=/dd/camera1/image_raw
 
 ###output###
+
 [ INFO] [1634705652.284265008]: Initializing nodelet with 4 worker threads.
+
 [ INFO] [1634705652.431830628]: Using transport "raw"
 
 #####third terminal#####
@@ -43,7 +48,9 @@ $roslaunch dd_arm_control dd_control.launch
 $rostopic list
 
 ###main output###
+
 /dd/joint1_position_controller/command
+
 /dd/joint2_position_controller/command
 
 ###add input to control robot arm###
@@ -53,6 +60,7 @@ $rostopic pub /dd/joint1_position_controller/command std_msgs/Float64 "data: 1.5
 $rostopic pub /dd/joint2_position_controller/command std_msgs/Float64 "data: -0.7"
 
 ###output###
+
 publishing and latching message. Press ctrl-C to terminate
 
 #####fifth terminal#####
