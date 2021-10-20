@@ -2,11 +2,11 @@
 This robot is moving base (by differential drive) &amp; pick and plack (scala)
 
 ## Simulation Phase I
-first terminal
+open first terminal and launch RVIZ by following this 
 
-###launch RVIZ###
-
+~~~~~~
 $ roslaunch dd_sim dd_rviz.launch
+~~~~~~
 
 #or launch RVIZ & Gazebo
 
