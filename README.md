@@ -2,7 +2,7 @@
 This robot is moving base (by differential drive) &amp; pick and plack (scala)
 
 Using | Package | Folder | File
-------||||-----
+------|----|----|-------
 launch robot on RVIZ | dd_sim | launch | dd_rviz
 launch robot on Gazebo & RVIZ | dd_sim | launch | dd_gazebo
 
