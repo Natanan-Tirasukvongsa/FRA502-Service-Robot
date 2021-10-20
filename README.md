@@ -6,6 +6,13 @@ Using | Package | Folder | File
 show default rviz | dd_sim | launch | config.rviz
 show hokuyo lidar | dd_sim | meshes | hokuyo.dae
 show all model in gazebo world | dd_sim | models | box_blue, box_red, box_green, new_home_base, home, cube_blue, cube_red, cube_green, cylinder_blue, cylinder_green, cylinder_red
+show robot xacro model | dd_sim | urdf | 03-diff_drive.xacro
+camera plugin | dd_sim | urdf | camera.gazebo
+lidar plugin | dd_sim | urdf | hokuyo.gazebo
+differenial drive plugin | dd_sim | urdf | dd_gazebo_plugins.xacro
+spawn world | dd_sim | worlds | dd_new.world
+CMakeLists | dd_sim |  - | CMakeLists.txt
+package | dd_sim| - | package.xml
 launch robot on RVIZ | dd_sim | launch | dd_rviz.launch
 launch robot on Gazebo & RVIZ | dd_sim | launch | dd_gazebo.launch
 launch control robot arm | dd_arm_control |launch | dd_control.launch
