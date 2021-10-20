@@ -1,9 +1,13 @@
 # FRA502-Service-Robot
 This robot is moving base (by differential drive) &amp; pick and plack (scala)
 
-Using | Package | Folder | File
+All files used in this project
+
+Use for | Package | Folder | File
 ------|----|----|-------
 show default rviz | dd_sim | launch | config.rviz
+launch robot on RVIZ | dd_sim | launch | dd_rviz.launch
+launch robot on Gazebo & RVIZ | dd_sim | launch | dd_gazebo.launch
 show hokuyo lidar | dd_sim | meshes | hokuyo.dae
 show all model in gazebo world | dd_sim | models | box_blue, box_red, box_green, new_home_base, home, cube_blue, cube_red, cube_green, cylinder_blue, cylinder_green, cylinder_red
 show robot xacro model | dd_sim | urdf | 03-diff_drive.xacro
@@ -13,10 +17,17 @@ differenial drive plugin | dd_sim | urdf | dd_gazebo_plugins.xacro
 spawn world | dd_sim | worlds | dd_new.world
 CMakeLists | dd_sim |  - | CMakeLists.txt
 package | dd_sim| - | package.xml
-launch robot on RVIZ | dd_sim | launch | dd_rviz.launch
-launch robot on Gazebo & RVIZ | dd_sim | launch | dd_gazebo.launch
+PID control robot arm | dd_arm_control | config | dd_control.yaml
 launch control robot arm | dd_arm_control |launch | dd_control.launch
+CMakeLists | dd_arm_control |  - | CMakeLists.txt
+package | dd_arm_control | - | package.xml
 launch control robot movement | dd_simple_control | launch| dd_control_teleop.launch
+CMakeLists | dd_simple_control |  - | CMakeLists.txt
+package | dd_simple_control | - | package.xml
+teleop twist keyboard | teleop_twist_keyboard | - | teleop_twist_keyboard.py
+CMakeLists | teleop_twist_keyboard |  - | CMakeLists.txt
+package | teleop_twist_keyboard | - | package.xml
+
 
 ## Simulation Phase I
 **Step 1**, open first terminal and launch RVIZ by following this 
