@@ -1,0 +1,25 @@
+<launch>
+    <!-- open gazebo-->
+    <!--include file="$(find gazebo_ros)/launch/empty_world.launch"/-->
+    
+    <!--convert joint states to TF trabsforms-->
+    
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+        respawn = "false" output="screen">
+        <remap from="/joint_states" to ="/dd/joint_states"/>
+    </node>
+    
+    
+    <!-- Load controllers -->
+    <rosparam command="load" file="$(find dd_sim)/config/joints.yaml" />
+
+    <!-- Controllers -->
+    <node name="controller_spawner" pkg="controller_manager" type="spawner"
+        respawn="false" output="screen" ns="/dd"
+        args="
+        joint_state_controller
+        joint1_position_controller
+        joint2_position_controller">
+        <!--remap from="/dd/robot_description" to ="/robot_description"/-->
+    </node>
+</launch>

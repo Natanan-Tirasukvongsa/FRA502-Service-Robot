@@ -1,0 +1,4 @@
+<?xml version ="1.0"?>
+<launch>
+    <param name ="01-diff_drive" command="$(find urdf)/urdf '$(find 01-diff_drive) />
+</launch>
