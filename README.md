@@ -53,6 +53,15 @@ $rostopic list
 
 /dd/joint2_position_controller/command
 
+### if no show main output###
+$rosservice call /dd/controller_manager/load_controller "name: 'joint1_position_controller'"
+
+$rosservice call /dd/controller_manager/load_controller "name: 'joint1_position_controller'"
+
+### output ###
+
+ok: True
+
 ###add input to control robot arm###
 
 $rostopic pub /dd/joint1_position_controller/command std_msgs/Float64 "data: 1.57"
