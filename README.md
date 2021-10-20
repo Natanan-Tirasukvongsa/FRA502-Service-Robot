@@ -1,9 +1,8 @@
 # FRA502-Service-Robot
 This robot is moving base (by differential drive) &amp; pick and plack (scala)
 
-Simulation Phase I
-
-#####first terminal#####
+## Simulation Phase I
+first terminal
 
 ###launch RVIZ###
 
