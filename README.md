@@ -78,7 +78,7 @@ the results will show
 /dd/joint1_position_controller/command
 /dd/joint2_position_controller/command
 ~~~
-**if it doen not show the results , try this following**
+**if it does not show the results , try this following**
 ~~~
 $ rosservice call /dd/controller_manager/load_controller "name: 'joint1_position_controller'"
 $ rosservice call /dd/controller_manager/load_controller "name: 'joint1_position_controller'"
