@@ -8,9 +8,11 @@ open first terminal and launch RVIZ by following this
 $ roslaunch dd_sim dd_rviz.launch
 ~~~~~~
 
-#or launch RVIZ & Gazebo
+or launch RVIZ & Gazebo together
 
+~~
 $ roslaunch dd_sim dd_Gazebo.launch
+~~
 
 #####second terminal#####
 
