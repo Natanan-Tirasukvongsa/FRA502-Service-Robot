@@ -20,24 +20,24 @@ open second terminal to show rostopic list
 $ rostopic list
 ~~~
 
-output will show 
+one of the resilts will show 
 
 ~~~
 /dd/camera1/image_raw
-~~~
-~~~
 /dd/laser/scan
 ~~~
 
-###open camera###
-
+Next, open camera
+~~~
 $ rosrun image_view image_view image:=/dd/camera1/image_raw
+~~~
 
-###output###
-
+output
+~~~
 [ INFO] [1634705652.284265008]: Initializing nodelet with 4 worker threads.
 
 [ INFO] [1634705652.431830628]: Using transport "raw"
+~~~
 
 #####third terminal#####
 
