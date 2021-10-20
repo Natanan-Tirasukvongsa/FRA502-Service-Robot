@@ -7,17 +7,17 @@ Simulation Phase I
 
 ###launch RVIZ###
 
-$roslaunch dd_sim dd_rviz.launch
+$ roslaunch dd_sim dd_rviz.launch
 
 #or launch RVIZ & Gazebo
 
-$roslaunch dd_sim dd_Gazebo.launch
+$ roslaunch dd_sim dd_Gazebo.launch
 
 #####second terminal#####
 
 ###rostopic list###
 
-$rostopic list
+$ rostopic list
 
 ###main output###
 
@@ -27,7 +27,7 @@ $rostopic list
 
 ###open camera###
 
-$rosrun image_view image_view image:=/dd/camera1/image_raw
+$ rosrun image_view image_view image:=/dd/camera1/image_raw
 
 ###output###
 
@@ -39,13 +39,13 @@ $rosrun image_view image_view image:=/dd/camera1/image_raw
 
 ###control robot arm###
 
-$roslaunch dd_arm_control dd_control.launch
+$ roslaunch dd_arm_control dd_control.launch
 
 #####fourth terminal#####
 
 ###rostopic list ###
 
-$rostopic list
+$ rostopic list
 
 ###main output###
 
@@ -54,9 +54,9 @@ $rostopic list
 /dd/joint2_position_controller/command
 
 ### if no show main output###
-$rosservice call /dd/controller_manager/load_controller "name: 'joint1_position_controller'"
+$ rosservice call /dd/controller_manager/load_controller "name: 'joint1_position_controller'"
 
-$rosservice call /dd/controller_manager/load_controller "name: 'joint1_position_controller'"
+$ rosservice call /dd/controller_manager/load_controller "name: 'joint1_position_controller'"
 
 ### output ###
 
@@ -64,9 +64,9 @@ ok: True
 
 ###add input to control robot arm###
 
-$rostopic pub /dd/joint1_position_controller/command std_msgs/Float64 "data: 1.57"
+$ rostopic pub /dd/joint1_position_controller/command std_msgs/Float64 "data: 1.57"
 
-$rostopic pub /dd/joint2_position_controller/command std_msgs/Float64 "data: -0.7"
+$ rostopic pub /dd/joint2_position_controller/command std_msgs/Float64 "data: -0.7"
 
 ###output###
 
