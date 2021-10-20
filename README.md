@@ -99,7 +99,7 @@ publishing and latching message. Press ctrl-C to terminate
 ~~~
 *note*
  1. input is in radian unit
- 2. each joint limit is between -3.14 - 3.14 radian
+ 2. each joint limit is between -3.14 to 3.14 radian
  3. input is also float
 
 **Step 7**, open fifth terminal, to control robot movement 
