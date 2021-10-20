@@ -3,9 +3,10 @@ This robot is moving base (by differential drive) &amp; pick and plack (scala)
 
 Using | Package | Folder | File
 ------|----|----|-------
-launch robot on RVIZ | dd_sim | launch | dd_rviz
-launch robot on Gazebo & RVIZ | dd_sim | launch | dd_gazebo
-
+launch robot on RVIZ | dd_sim | launch | dd_rviz.launch
+launch robot on Gazebo & RVIZ | dd_sim | launch | dd_gazebo.launch
+launch control robot arm | dd_arm_control |launch | dd_control.launch
+launch control robot movement | dd_simple_control | launch| dd_control_teleop.launch
 
 ## Simulation Phase I
 **Step 1**, open first terminal and launch RVIZ by following this 
